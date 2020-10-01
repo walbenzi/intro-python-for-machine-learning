@@ -47,3 +47,24 @@ if arbitrary_number < 10 or arbitrary_number > 30:
 # to become half as large if it's greater than 100, and twice
 # as large if it's less than 100. Print the variable's value 
 # after the if/else block and test that your code works.
+
+a_variable = "cat"
+try:
+    if a_variable > 100:
+        a_variable /= 2
+        pass
+    elif a_variable < 100:
+        a_variable *= 2
+        pass
+    elif a_variable == 100:
+        print('a_variable is unchanged because it is 100')
+        pass
+except:
+    # Three problems: how do I get rid of the whitespace in 'cat' and after
+    # the linewrap to comply with pep8 and what about bare except?
+    print('something went wrong')
+    print("a_variable is \'", a_variable, "\' and we are expecting a number \
+        that may be halved or doubled or left the same")
+    exit(1)
+
+print(a_variable)

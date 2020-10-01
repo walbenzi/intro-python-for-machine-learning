@@ -16,10 +16,10 @@ key_examples = {
 key_examples['new_key'] = 'new value'
 
 # We can fetch an item from a dictionary using bracket notation
-# similar to lists. 
-print(key_examples['tyler']) # 75
+# similar to lists.
+print(key_examples['tyler'])  # 75
 
-# We can also use a built in function called get, which 
+# We can also use a built in function called get, which
 # returns None if no element in the dictionary matches.
 print(key_examples.get('tyler'))
 
@@ -27,7 +27,7 @@ print(key_examples.get('tyler'))
 # we get an error, which is a good reason to use .get
 
 # key_examples[7] # error, terminates program
-print(key_examples.get(7)) # prints None
+print(key_examples.get(7))  # prints None
 
 # We can also loop through dictionaries, but the order is decided
 # arbitrarily so remember not to rely on an order when doing so.
@@ -40,3 +40,6 @@ for key, value in key_examples.items():
 # "Ghastly Business". Write a line of code that accesses that value,
 # stores it into a variable, and then prints the value of that variable
 # to the console. You should use "bracket notation" or the .get function
+
+i = (key_examples.get(None)[3])
+print(i)
