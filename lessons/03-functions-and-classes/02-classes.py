@@ -103,7 +103,7 @@ y_values = [2, 4, 6, 8, 10]
 linear_model.fit(x_values, y_values)
 
 # We can access the properties of an object this way too
-print(linear_model.slope, linear_model.y_intercept) # 2, 0
+print(f' the slope is {linear_model.slope} and the intercept is {linear_model.y_intercept}.')
 
 # Using our predict method...
 prediction = linear_model.predict(3.45)
@@ -113,3 +113,11 @@ print(prediction)
 # then create two new lists of x and y data and fit the model on that data.
 # Then, print the slope and y_intercept of your model, and use it to make a
 # prediction for some made up x point.
+
+new_model = SimpleLinearRegression()
+x_list = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1]
+y_list = [2, 4, 6, 8, 10, 2, 3, 4, 5, 6, 1]
+new_model.fit(x_list, y_list)
+print(new_model.slope, new_model.y_intercept)
+prognosticator = new_model.predict(3.1459)
+print(prognosticator)
