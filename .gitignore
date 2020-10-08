@@ -1,3 +1,7 @@
 .ipynb_checkpoints
 .vscode/
 .DS_Store
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/PythonAI/v16/.suo
